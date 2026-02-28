@@ -1,168 +1,66 @@
 # 📝 Task Tracker CLI
 
-A simple command-line task management application built using Node.js.
-
-This project allows users to manage tasks directly from the terminal.  
+A simple command-line task manager built with Node.js.  
 Tasks are stored locally in a JSON file.
 
 ---
+   # task-tracker
+   the simple solution of give [task-tracker](https://roadmap.sh/projects/task-tracker)
 
-## 📖 About The Project
-
-Task Tracker CLI is a lightweight command-line application that helps you manage your daily tasks directly from the terminal.
-
-It allows you to:
+## 🚀 Features
 
 - Add tasks
 - Update tasks
 - Delete tasks
-- Track progress
-- Store everything locally in a JSON file
-
-This project is built using only **Node.js native modules** — no external libraries.
-
----
-
-## 🛠 Built With
-
-- JavaScript (Node.js)
-- File System Module (fs)
-- JSON for data storage
+- Mark as in-progress
+- Mark as done
+- List all tasks
+- List tasks by status
 
 ---
 
-## 📂 Project Structure
+## 🛠 Tech Used
 
-task-cli/
-│
-├── task-cli.js     # Main application logic  
-├── tasks.json      # Auto-generated task storage  
-└── README.md       # Project documentation  
+- Node.js
+- Built-in `fs` module
+- JSON for storage
 
 ---
 
-## 🚀 Getting Started
-
-### 1️⃣ Prerequisites
-
-Make sure Node.js is installed:
-
-node -v
-
-If not installed, download from:  
-https://nodejs.org/
-
----
-
-### 2️⃣ Run the Project
-
-Navigate to the project folder:
-
-cd task-cli
+## ▶️ Usage
 
 Run commands using:
 
 node task-cli.js <command>
 
----
-
-# 📌 Available Commands
-
----
-
-## ➕ Add a Task
-
+### Add Task
 node task-cli.js add "Task description"
 
-Example:
-
-node task-cli.js add "Learn JavaScript"
-
----
-
-## 📋 List All Tasks
-
-node task-cli.js list
-
----
-
-## 📂 List Tasks by Status
-
+### List Tasks
+node task-cli.js list  
 node task-cli.js list todo  
 node task-cli.js list in-progress  
 node task-cli.js list done  
 
----
-
-## ✏️ Update a Task
-
+### Update Task
 node task-cli.js update <id> "New description"
 
-Example:
-
-node task-cli.js update 1 "Learn Advanced JavaScript"
-
----
-
-## 🚀 Mark Task as In Progress
-
-node task-cli.js mark-in-progress <id>
-
----
-
-## ✅ Mark Task as Done
-
+### Mark Task
+node task-cli.js mark-in-progress <id>  
 node task-cli.js mark-done <id>
 
----
-
-## ❌ Delete a Task
-
+### Delete Task
 node task-cli.js delete <id>
 
 ---
 
-# 🗂 Task Data Structure
+## 📂 Structure
 
-Each task is stored in tasks.json like this:
-
-{
-  "id": 1,
-  "description": "Learn JavaScript",
-  "status": "todo",
-  "createdAt": "2026-02-28T10:00:00.000Z",
-  "updatedAt": "2026-02-28T10:00:00.000Z"
-}
+task-cli.js – Main CLI logic  
+tasks.json – Auto-created task storage  
 
 ---
 
-# 🧠 What I Learned
-
-- Working with Node.js CLI
-- Parsing command-line arguments
-- Using the File System module
-- JSON data handling
-- CRUD operations
-- Error handling
-- Building real-world beginner projects
-
----
-
-# 🌟 Future Improvements
-
-- 🎨 Add colored terminal output
-- ⏰ Add due dates
-- 🔥 Add priority levels
-- 📦 Convert to global CLI tool
-- 🔎 Add search feature
-- 🧪 Add automated tests
-
----
-
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 Sai Teja
-
----
-
-⭐ If you like this project, give it a star!
